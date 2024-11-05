@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <title>jQuery</title>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.5.1.js"
+    ></script>
+  </head>
+  <body>
+    <p id="paragrafo_texto">Texto do parágrafo</p>
+
+    <ul>
+      <li class="item_lista">Primeiro item</li>
+      <li class="item_lista">Segundo item</li>
+      <li>Terceiro item</li>
+    </ul>
+
+    <script type="text/javascript">
+      // imprimirá Terceiro item
+      console.log($("li:not(.item_lista)").html());
+    </script>
+  </body>
+</html>
