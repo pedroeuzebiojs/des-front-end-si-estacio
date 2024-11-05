@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <title>Usando jQuery para manipular a árvore DOM</title>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.6.4.js"
+    ></script>
+  </head>
+
+  <body>
+    <script type="text/javascript">
+      // Incluindo a tag H1 dentro da tag Body
+      $("body").append("<h1 id='titulo-inicial'>Título inicial</h1>");
+      $("body").append(
+        "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>"
+      );
+      $("body").append(
+        "<img src='https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Boxmodell-detail.png/220px-Boxmodell-detail.png' alt='Imagem' />"
+      );
+    </script>
+  </body>
+</html>
