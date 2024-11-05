@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="utf-8">
+		<title>jQuery</title>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	</head>
+	<body>
+		<div>
+			<h1>Título na primeira div</h1>
+		</div>
+		
+		<div>
+			<h2>Subtítulo na segunda div</h1>
+		</div>
+		
+		<ul id="container_lista">
+			<li class="item_lista">Primeiro item</li>
+			<li class="item_lista">Segundo item</li>
+			<li>Terceiro item</li>
+		</ul>
+		
+		<script type="text/javascript">
+			// Adicionando um novo item <li> ao final, dentro da tag <ul> com identificador "container_lista"
+			$('#container_lista').append('<li>Quarto Item</li>');
+			
+			// Adicionando uma tag <p> após cada tag <h1> e <h2>
+			$('h1,h2').after('<p>Texto do parágrafo inserido após cada tag h1 e h2 </p>');
+			
+			// Adicionando uma tag <h3> antes da tag <ul> com identificador "container_lista"
+			$('#container_lista').before('<h3>Subtítulo da Lista não ordenada</h3>');
+		</script>
+	</body>
+</html>
