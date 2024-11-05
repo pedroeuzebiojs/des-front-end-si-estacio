@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <title>Escopo de variáveis em JS</title>
+    <script type="text/javascript">
+      var msg = "Conteúdo da variável msg fora do bloco de instrução";
+
+      // Bloco de Instrução
+      // Em blocos de instrução, quando redeclarada, a variável sobrescreve a existente
+      if (true) {
+        var msg = "Conteúdo da variável msg dentro do bloco de instrução";
+        console.log(msg); // Imprimirá "Conteúdo da variável msg dentro do bloco de instrução"
+      }
+
+      console.log(msg); // Imprimirá "Conteúdo da variável msg dentro do bloco de instrução"
+      var msg2 = "Conteúdo da variável msg2 fora do bloco de função";
+
+      // Bloco de Função
+      // Em blocos de Função, quando redeclarada, a variável não sobrescreve a existente
+      // Logo, a nova variável só existe a nível do escopo da função
+      imprimeVariavel();
+
+      function imprimeVariavel() {
+        var msg2 = "Conteúdo da variável msg2 dentro do bloco de função";
+        var msg3 =
+          "Conteúdo da variável msg3 - só existente dentro do bloco de função";
+        console.log(msg2); //Imprimirá "Conteúdo da variável msg2 dentro do bloco de função"
+      }
+
+      console.log(msg2); // Imprimirá "Conteúdo da variável msg2 fora do bloco função"
+      console.log(msg3); // Disparará um erro dizendo que a variável msg3 não foi definida
+    </script>
+  </head>
+  <body></body>
+</html>
