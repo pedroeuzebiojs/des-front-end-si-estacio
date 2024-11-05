@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <title>Eventos em Javascript</title>
+  </head>
+  <body onload="escondeTexto()">
+    <h1 id="titulo">
+      Clique em qualquer lugar nesse texto para ver o conteúdo escondido.
+    </h1>
+    <p id="texto_escondido">
+      Texto escondido, que só será mostrado após click na texto acima.
+    </p>
+    <script type="text/javascript">
+      function escondeTexto() {
+        var eP = document.getElementById("texto_escondido");
+        eP.style.display = "none";
+      }
+
+      var hP = document.getElementById("titulo");
+      hP.onclick = function () {
+        document.getElementById("texto_escondido").style.display = "block";
+      };
+    </script>
+  </body>
+</html>
