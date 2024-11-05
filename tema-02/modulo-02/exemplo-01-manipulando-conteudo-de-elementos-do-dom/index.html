@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-BR">
+	<head>
+	  <meta charset="utf-8">
+	  <title>jQuery - Manipulando Conteúdo</title>
+	  <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.4.js"></script>
+	</head>
+	<body>
+	  <div>
+	    <h1>Título na primeira div</h1>
+	    <p>Texto inicial do parágrafo da primeira div.</p>
+	  </div>
+	  
+	  <div>
+	    <h2>SubTítulo na segunda div</h1>
+	    <p>Texto inicial do parágrafo da segunda div. </p>
+	  </div>
+	
+	  <h3>Parágrafos com span</h3>
+	  
+	  <p>
+	    Texto do parágrafo.
+	    <span>Texto do span</span>
+	  </p>
+	  
+	  <p>
+	    Texto do parágrafo.
+	    <span>Texto do span</span>
+	  </p>
+	  
+	  <p>
+	    Texto do parágrafo.
+	    <span>Texto do span</span>
+	  </p>
+	  
+	  <p>
+	    Texto do parágrafo.
+	    <span>Texto do span</span>
+	  </p>
+	
+	  <script type="text/javascript">
+	    // Sobrescrevendo o texto atual do primeiro parágrafo do documento por um novo texto
+			$('p').first().html("Esse texto sobrescreve o inicial.");
+			
+	    // Adicionando um novo conteúdo ao conteúdo já existente
+	    // Foi utilizado o seletor first() para selecionar o primeiro elemento <p>
+	    // $('p').first().append("E esse texto é adicionado ao final do novo texto.");
+			
+	    // Uma outra forma de adicionar um novo conteúdo junto ao conteúdo já existente.
+	    // Foi utilizado o seletor last() para selecionar o último elemento <p>
+	    // $('p').last().html($('p').last().html() + "Esse texto é adicionado ao final do texto existente." );
+			
+	    // Removendo o conteúdo da tag <span>
+	    // Foi utilizado o seletor find() para localizar os elementos <span> dentro dos elementos <p>
+	    //$('p').find('span').html('');
+	  </script>
+	</body>
+</html>
