@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <title>Manipulando Eventos com jQuery</title>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.5.1.js"
+    ></script>
+  </head>
+  <body>
+    <div id="lipsum">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+
+    <script type="text/javascript">
+      $(function () {
+        $("#lipsum").append(
+          "<a id='link_alerta' href='pagina.html'>Exibir alerta</a>"
+        );
+
+        $("#link_alerta").on("click", function (event) {
+          event.preventDefault();
+          alert("O novo link, inserido com jQuery, foi clicado");
+        });
+      });
+    </script>
+  </body>
+</html>
