@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <title>Evento on</title>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.6.4.js"
+    ></script>
+  </head>
+  <body>
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+      <li>Item 4</li>
+      <li>Item 5</li>
+    </ul>
+
+    <script type="text/javascript">
+      $("ul").on("click", "li", function () {
+        console.log("Conteúdo do item da lista: " + $(this).text());
+      });
+
+      // Adicionando, dinamicamente, um novo elemento <li> à lista
+      $("ul").append("<li>Item 6</li>");
+    </script>
+  </body>
+</html>
