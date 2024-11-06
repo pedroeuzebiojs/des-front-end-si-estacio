@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <title>Eventow window.load e document.load</title>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.6.4.js"
+    ></script>
+  </head>
+  <body>
+    <div id="lipsum">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed justo
+        ipsum, rhoncus at orci vel, aliquam consequat lorem. Integer congue enim
+        quis semper mattis. Aenean augue libero, maximus et odio nec, malesuada
+        tristique felis. Donec dignissim libero id pulvinar faucibus. Phasellus
+        blandit justo quam. Integer ex massa, rhoncus eu libero quis, fermentum
+        feugiat odio. Sed tellus purus, fermentum ac euismod et, mattis at nunc.
+        Nunc nisl leo, dapibus eget lorem id, congue lobortis ipsum.
+      </p>
+    </div>
+
+    <script type="text/javascript">
+      window.onload = function () {
+        alert("Evento window.load disparado");
+      };
+    </script>
+  </body>
+</html>
