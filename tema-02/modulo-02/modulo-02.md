@@ -6,8 +6,6 @@ Ao final deste módulo, você será capaz de descrever o modo de manipulação d
 
 A utilização de **frameworks** facilita e agiliza o trabalho de programação. Por meio desses recursos, temos acesso a uma série de códigos e funcionalidades prontas, diminuindo a quantidade de códigos que precisamos escrever. Nesse contexto, veremos, a partir de agora, o framework jQuery, um dos mais conhecidos frameworks Javascript.
 
----
-
 ## A biblioteca jQuery
 
 É uma biblioteca Javascript rápida, pequena e rica em recursos. Essa biblioteca simplifica o processo de manipulação de documentos HTML, manipulação de eventos, animação e AJAX, com uma API fácil de usar, que funciona em vários navegadores (JQUERY, 2020).
@@ -19,7 +17,7 @@ O primeiro passo para utilizar a biblioteca jQuery é incluí-la em nosso códig
 
 Além disso, é importante saber que há versões diferentes, com tamanhos diversos. Além de estar em contínua evolução, são disponibilizados diferentes pacotes: **completos**, **compactados** e **slim**. Esse último exclui alguns recursos, como os módulos AJAX e o módulo de efeitos.
 
-### **O jQuery, além de ser uma biblioteca rica em recursos, é gratuito.**
+### O jQuery, além de ser uma biblioteca rica em recursos, é gratuito
 
 O fragmento de código a seguir demonstra como incorporar a biblioteca a partir de um recurso remoto. Para utilizá-la localmente, basta fazer o download da versão desejada, modificando o endereço do atributo “src”.
 
@@ -52,8 +50,6 @@ No fragmento anterior, foi utilizada a versão 3.6.4. Como mencionado, é possí
 
 A seguir, veremos alguns recursos jQuery relacionados à árvore DOM e a seletores.
 
----
-
 ## Manipulando a árvore DOM
 
 A árvore **DOM** disponibiliza uma representação estruturada do documento HTML em formato de árvore. Logo, a partir desse modelo, temos acesso a qualquer elemento de uma página. Observe!
@@ -64,13 +60,11 @@ A árvore **DOM** disponibiliza uma representação estruturada do documento H
 
 A biblioteca jQuery fornece vários recursos para manipulação do DOM. Veremos alguns desses recursos a seguir.
 
----
-
-## **Selecionando elementos**
+## Selecionando elementos
 
 Com jQuery, podemos referenciar qualquer elemento da página HTML utilizando o objeto.
 
-```jsx
+```js
 $(seletor);
 ```
 
@@ -99,6 +93,7 @@ Ao analisar a sintaxe, temos o método `$()`, que recebe como parâmetro um sele
     <script type="text/javascript">
       // imprimirá Texto do parágrafo
       console.log($("#paragrafo_texto").html());
+
       // imprimirá Primeiro item
       console.log($(".item_lista").eq(0).html());
     </script>
@@ -109,14 +104,11 @@ Ao analisar a sintaxe, temos o método `$()`, que recebe como parâmetro um sele
 Agora, vamos analisar as instruções do código!
 
 - Primeira instrução
-
-  Na primeira instrução “`console.log`”, o atributo “`id`” da `tag` `<p>` foi passado como seletor. Perceba que, nesse caso, o nome do identificador foi precedido pelo símbolo “`#`”. Além disso, ambos foram englobados por aspas duplas.
-
+  Na primeira instrução “`console.log`”, o atributo “`id`” da tag `<p>` foi passado como seletor. Perceba que, nesse caso, o nome do identificador foi precedido pelo símbolo “`#`”. Além disso, ambos foram englobados por aspas duplas.
 - Segunda instrução
+  Já na segunda instrução “`console.log`”, foi passado como seletor o nome da classe atribuída aos elementos `<li>`. Nesse caso, para referenciar classes, utilizamos o “`.`” antes do nome delas. Além disso, foram utilizadas aspas simples – só para demonstrar que podem ser utilizadas as aspas duplas e as aspas simples. Por fim, na segunda instrução, foi utilizado o método `eq`, que recebeu como parâmetro o número 0, ou seja, foi selecionado o primeiro elemento ao qual foi atribuída a classe “`item_lista`”. Cabe destacar ainda que, para acessar o conteúdo das tags, foi utilizado o método `html()`.
 
-  Já na segunda instrução “`console.log`”, foi passado como seletor o nome da classe atribuída aos elementos `<li>`. Nesse caso, para referenciar classes, utilizamos o “`.`” antes do nome delas. Além disso, foram utilizadas aspas simples – só para demonstrar que podem ser utilizadas as aspas duplas e as aspas simples. Por fim, na segunda instrução, foi utilizado o método `eq`, que recebeu como parâmetro o número 0, ou seja, foi selecionado o primeiro elemento ao qual foi atribuída a classe “`item_lista`”. Cabe destacar ainda que, para acessar o conteúdo das `tags`, foi utilizado o método `html()`.
-
-Veja outra maneira de selecionar elementos. Nesse caso, utilizaremos o método :not. Vamos ao código!
+Veja outra maneira de selecionar elementos. Nesse caso, utilizaremos o método `:not.` Vamos ao código!
 
 ```html
 <!DOCTYPE html>
@@ -148,14 +140,12 @@ Veja outra maneira de selecionar elementos. Nesse caso, utilizaremos o método :
 
 Veja que selecionamos o único elemento `<li>` que não possui a classe “`item_lista`”. Esses foram exemplos simples de como é possível selecionar elementos da árvore DOM utilizando jQuery.
 
----
-
-## **Adicionando e removendo elementos**
+## Adicionando e removendo elementos
 
 Existem alguns métodos jQuery que permitem a inserção e a remoção de elementos na árvore DOM. Vamos ver alguns exemplos!
 
 ```html
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
  <head>
   <meta charset="utf-8">
@@ -191,13 +181,13 @@ Existem alguns métodos jQuery que permitem a inserção e a remoção de elemen
 </html>
 ```
 
-Para ver o resultado dos métodos utilizados, copie o código, salve-o como arquivo “`html`” e abra-o no navegador. Compare a estrutura inicial do código `HTML` e veja que, por meio dos métodos jQuery, novos elementos foram adicionados ao documento. Além disso, verifique também como ficou a árvore DOM após as modificações em questão no inspecionador de elementos.
+Para ver o resultado dos métodos utilizados, copie o código, salve-o como arquivo “`.html`” e abra-o no navegador. Compare a estrutura inicial do código HTML e veja que, por meio dos métodos jQuery, novos elementos foram adicionados ao documento. Além disso, verifique também como ficou a árvore DOM após as modificações em questão no inspecionador de elementos.
 
 ### **Atenção!**
 
-Leia os comentários constantes no próprio código, no qual são passados mais detalhes sobre os métodos utilizados. Repare também que, junto com o método after, foi utilizado um novo tipo de seletor, o seletor múltiplo.
+Leia os comentários constantes no próprio código, no qual são passados mais detalhes sobre os métodos utilizados. Repare também que, junto com o método `after`, foi utilizado um novo tipo de seletor, o seletor múltiplo.
 
-Vamos agora remover elementos de forma dinâmica, ou seja, removeremos, em tempo de execução, alguns elementos inicialmente presentes no documento `HTML`. Para isso, utilizaremos o código `HTML` resultante do código anterior!
+Vamos agora remover elementos de forma dinâmica, ou seja, removeremos, em tempo de execução, alguns elementos inicialmente presentes no documento HTML. Para isso, utilizaremos o código HTML resultante do código anterior!
 
 ```html
 <!DOCTYPE html>
@@ -243,18 +233,16 @@ Vamos agora remover elementos de forma dinâmica, ou seja, removeremos, em tempo
 </html>
 ```
 
----
-
 ## Manipulando conteúdo de elementos do DOM
 
 Até aqui, vimos como manipular os elementos do DOM utilizando jQuery. Agora, veremos como manipular o conteúdo dos elementos, assim como os seus atributos. No exemplo a seguir, são demonstradas algumas formas de remover e adicionar conteúdo. Além disso, novos seletores são demonstrados.
 
-Copie o código e salve como um arquivo “`html`”. Em seguida, comente o código Javascript e carregue a página no navegador. Em sequência, descomente linha a linha os códigos `JS`, salve e recarregue a página. Desse modo, você conseguirá observar melhor a diferença entre o conteúdo original e o conteúdo após as manipulações realizadas.
+Copie o código e salve como um arquivo “`.html`”. Em seguida, comente o código Javascript e carregue a página no navegador. Em sequência, descomente linha a linha os códigos JS, salve e recarregue a página. Desse modo, você conseguirá observar melhor a diferença entre o conteúdo original e o conteúdo após as manipulações realizadas.
 
 Vamos ao exemplo!
 
 ```html
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
  <head>
    <meta charset="utf-8">
@@ -314,21 +302,19 @@ Vamos ao exemplo!
 </html>
 ```
 
-## **Usando jQuery para manipular a árvore DOM**
+## Usando jQuery para manipular a árvore DOM
 
-Como vimos, um dos valiosos recursos da lib jQuery é permitir a manipulação da árvore DOM. A seguir, colocaremos em prática o que vimos sobre esse assunto, criando, de forma dinâmica, algumas `tags`, incluindo seu conteúdo, em uma página HTML.
-
----
+Como vimos, um dos valiosos recursos da lib jQuery é permitir a manipulação da árvore DOM. A seguir, colocaremos em prática o que vimos sobre esse assunto, criando, de forma dinâmica, algumas tags, incluindo seu conteúdo, em uma página HTML.
 
 ## Roteiro de prática
 
 Para a realização desta prática, você precisará de algumas ferramentas: um editor de textos – pode ser o próprio Bloco de Notas do Windows ou o Nano Editor do Linux, ou então o software (gratuito) Notepad++. Precisará também de um navegador – Google Chrome, Firefox, MS Edge etc. Em termos de conceitos, reveja tudo o que aprendemos sobre a manipulação da árvore DOM utilizando jQuery. Você aplicará alguns dos recursos dessa biblioteca para realizar o exercício proposto. Agora, vamos ao roteiro:
 
-1. No editor, crie a estrutura base de uma página HTML – doctype, html, head e body. Lembre-se de abrir e fechar corretamente cada tag. Além disso, não declare, inicialmente, nenhum elemento dentro da tag body.
-2. Utilizando jQuery, insira, dentro da tag body, os seguintes elementos e respectivos conteúdos:
-   1. Tag `H1` (com `id` = “`titulo-inicial`”), com o conteúdo “`Título Inicial`”.
-   2. Tag `P`, na qual deverá ser inserido um parágrafo de texto qualquer (dica: use o `*lore ipsum*`).
-   3. Tag `IMG`, cujo atributo “`src`” deverá conter o endereço de uma imagem válida. Por fim, salve a página no editor e a abra no navegador para ver o resultado – que deverá ser semelhante/próximo ao visto na imagem abaixo.
+1. No editor, crie a estrutura base de uma página HTML – `DOCTYPE`, `html`, `head` e `body`. Lembre-se de abrir e fechar corretamente cada tag. Além disso, não declare, inicialmente, nenhum elemento dentro da tag `body`.
+2. Utilizando jQuery, insira, dentro da tag `body`, os seguintes elementos e respectivos conteúdos:
+   1. Tag `h1` (com `id` = “`titulo-inicial`”), com o conteúdo “Título Inicial”.
+   2. Tag `p`, na qual deverá ser inserido um parágrafo de texto qualquer (dica: use o *lore ipsum*).
+   3. Tag `img`, cujo atributo “`src`” deverá conter o endereço de uma imagem válida. Por fim, salve a página no editor e a abra no navegador para ver o resultado – que deverá ser semelhante/próximo ao visto na imagem abaixo.
 3. Por fim, salve a página no editor e a abra no navegador para ver o resultado – que deverá ser semelhante/próximo ao visto na imagem abaixo.
 
 ![Resultado da prática no navegador.](https://prod-files-secure.s3.us-west-2.amazonaws.com/668b7fb3-6860-4388-be24-c71210d5b102/c8e622ca-bda6-49f4-9687-9415559dd527/image.png)
