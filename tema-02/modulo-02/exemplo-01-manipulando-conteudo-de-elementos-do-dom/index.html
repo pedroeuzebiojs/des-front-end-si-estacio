@@ -44,15 +44,15 @@
 			
 	    // Adicionando um novo conteúdo ao conteúdo já existente
 	    // Foi utilizado o seletor first() para selecionar o primeiro elemento <p>
-	    // $('p').first().append("E esse texto é adicionado ao final do novo texto.");
+	    $('p').first().append("<br> E esse texto é adicionado ao final do novo texto.");
 			
 	    // Uma outra forma de adicionar um novo conteúdo junto ao conteúdo já existente.
 	    // Foi utilizado o seletor last() para selecionar o último elemento <p>
-	    // $('p').last().html($('p').last().html() + "Esse texto é adicionado ao final do texto existente." );
+	    $('p').last().html($('p').last().html() + "Esse texto é adicionado ao final do texto existente." );
 			
 	    // Removendo o conteúdo da tag <span>
 	    // Foi utilizado o seletor find() para localizar os elementos <span> dentro dos elementos <p>
-	    //$('p').find('span').html('');
+	    $('p').find('span').html('');
 	  </script>
 	</body>
 </html>
