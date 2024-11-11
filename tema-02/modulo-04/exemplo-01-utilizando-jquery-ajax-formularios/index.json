@@ -1,0 +1,402 @@
+[
+  {
+    "id": 1,
+    "fabricante": "Toyota",
+    "modelo": "T100",
+    "ano": 1996,
+    "cor": "Red",
+    "valor": "186096.79"
+  },
+  {
+    "id": 2,
+    "fabricante": "Porsche",
+    "modelo": "911",
+    "ano": 1985,
+    "cor": "Crimson",
+    "valor": "430049.68"
+  },
+  {
+    "id": 3,
+    "fabricante": "Lexus",
+    "modelo": "ES",
+    "ano": 2010,
+    "cor": "Maroon",
+    "valor": "96742.09"
+  },
+  {
+    "id": 4,
+    "fabricante": "Mercury",
+    "modelo": "Grand Marquis",
+    "ano": 2008,
+    "cor": "Crimson",
+    "valor": "286282.99"
+  },
+  {
+    "id": 5,
+    "fabricante": "Chevrolet",
+    "modelo": "Express 3500",
+    "ano": 2012,
+    "cor": "Red",
+    "valor": "116631.05"
+  },
+  {
+    "id": 6,
+    "fabricante": "Volkswagen",
+    "modelo": "R32",
+    "ano": 2008,
+    "cor": "Red",
+    "valor": "243113.93"
+  },
+  {
+    "id": 7,
+    "fabricante": "Chevrolet",
+    "modelo": "Impala",
+    "ano": 2011,
+    "cor": "Yellow",
+    "valor": "413875.02"
+  },
+  {
+    "id": 8,
+    "fabricante": "Ford",
+    "modelo": "Excursion",
+    "ano": 2002,
+    "cor": "Mauv",
+    "valor": "251252.94"
+  },
+  {
+    "id": 9,
+    "fabricante": "Mitsubishi",
+    "modelo": "GTO",
+    "ano": 1995,
+    "cor": "Mauv",
+    "valor": "400976.19"
+  },
+  {
+    "id": 10,
+    "fabricante": "Mercury",
+    "modelo": "Marauder",
+    "ano": 2004,
+    "cor": "Crimson",
+    "valor": "255487.79"
+  },
+  {
+    "id": 11,
+    "fabricante": "Oldsmobile",
+    "modelo": "Aurora",
+    "ano": 2002,
+    "cor": "Turquoise",
+    "valor": "390444.16"
+  },
+  {
+    "id": 12,
+    "fabricante": "Volkswagen",
+    "modelo": "Phaeton",
+    "ano": 2006,
+    "cor": "Khaki",
+    "valor": "51913.89"
+  },
+  {
+    "id": 13,
+    "fabricante": "Nissan",
+    "modelo": "Sentra",
+    "ano": 1994,
+    "cor": "Fuscia",
+    "valor": "158454.06"
+  },
+  {
+    "id": 14,
+    "fabricante": "BMW",
+    "modelo": "M5",
+    "ano": 2002,
+    "cor": "Purple",
+    "valor": "480150.84"
+  },
+  {
+    "id": 15,
+    "fabricante": "Dodge",
+    "modelo": "Ram",
+    "ano": 2007,
+    "cor": "Yellow",
+    "valor": "479547.46"
+  },
+  {
+    "id": 16,
+    "fabricante": "Mercedes-Benz",
+    "modelo": "300SE",
+    "ano": 1993,
+    "cor": "Khaki",
+    "valor": "490121.57"
+  },
+  {
+    "id": 17,
+    "fabricante": "Subaru",
+    "modelo": "Impreza",
+    "ano": 2012,
+    "cor": "Green",
+    "valor": "287932.08"
+  },
+  {
+    "id": 18,
+    "fabricante": "BMW",
+    "modelo": "1 Series",
+    "ano": 2011,
+    "cor": "Mauv",
+    "valor": "120264.57"
+  },
+  {
+    "id": 19,
+    "fabricante": "Ford",
+    "modelo": "Escort",
+    "ano": 2002,
+    "cor": "Mauv",
+    "valor": "226851.63"
+  },
+  {
+    "id": 20,
+    "fabricante": "Maserati",
+    "modelo": "GranSport",
+    "ano": 2005,
+    "cor": "Teal",
+    "valor": "67557.36"
+  },
+  {
+    "id": 21,
+    "fabricante": "Mercury",
+    "modelo": "Lynx",
+    "ano": 1987,
+    "cor": "Pink",
+    "valor": "451335.20"
+  },
+  {
+    "id": 22,
+    "fabricante": "Subaru",
+    "modelo": "Loyale",
+    "ano": 1992,
+    "cor": "Turquoise",
+    "valor": "127782.31"
+  },
+  {
+    "id": 23,
+    "fabricante": "Kia",
+    "modelo": "Sedona",
+    "ano": 2007,
+    "cor": "Aquamarine",
+    "valor": "308650.30"
+  },
+  {
+    "id": 24,
+    "fabricante": "Hyundai",
+    "modelo": "Azera",
+    "ano": 2009,
+    "cor": "Goldenrod",
+    "valor": "90793.90"
+  },
+  {
+    "id": 25,
+    "fabricante": "Jaguar",
+    "modelo": "X-Type",
+    "ano": 2005,
+    "cor": "Maroon",
+    "valor": "182368.74"
+  },
+  {
+    "id": 26,
+    "fabricante": "GMC",
+    "modelo": "Sierra 1500",
+    "ano": 1999,
+    "cor": "Pink",
+    "valor": "249892.18"
+  },
+  {
+    "id": 27,
+    "fabricante": "Volvo",
+    "modelo": "S60",
+    "ano": 2004,
+    "cor": "Violet",
+    "valor": "280641.74"
+  },
+  {
+    "id": 28,
+    "fabricante": "Dodge",
+    "modelo": "Ram 3500",
+    "ano": 1994,
+    "cor": "Green",
+    "valor": "292340.53"
+  },
+  {
+    "id": 29,
+    "fabricante": "Saab",
+    "modelo": "9-3",
+    "ano": 2002,
+    "cor": "Pink",
+    "valor": "389986.77"
+  },
+  {
+    "id": 30,
+    "fabricante": "BMW",
+    "modelo": "X6",
+    "ano": 2008,
+    "cor": "Puce",
+    "valor": "27442.31"
+  },
+  {
+    "id": 31,
+    "fabricante": "Ford",
+    "modelo": "Taurus",
+    "ano": 2013,
+    "cor": "Puce",
+    "valor": "372629.75"
+  },
+  {
+    "id": 32,
+    "fabricante": "Honda",
+    "modelo": "Odyssey",
+    "ano": 2010,
+    "cor": "Puce",
+    "valor": "41816.09"
+  },
+  {
+    "id": 33,
+    "fabricante": "Jeep",
+    "modelo": "Liberty",
+    "ano": 2012,
+    "cor": "Khaki",
+    "valor": "413117.00"
+  },
+  {
+    "id": 34,
+    "fabricante": "Dodge",
+    "modelo": "Durango",
+    "ano": 2011,
+    "cor": "Aquamarine",
+    "valor": "165699.62"
+  },
+  {
+    "id": 35,
+    "fabricante": "Ford",
+    "modelo": "Excursion",
+    "ano": 2004,
+    "cor": "Fuscia",
+    "valor": "80175.61"
+  },
+  {
+    "id": 36,
+    "fabricante": "Oldsmobile",
+    "modelo": "Silhouette",
+    "ano": 1992,
+    "cor": "Crimson",
+    "valor": "362372.95"
+  },
+  {
+    "id": 37,
+    "fabricante": "Volkswagen",
+    "modelo": "Fox",
+    "ano": 1987,
+    "cor": "Indigo",
+    "valor": "357444.07"
+  },
+  {
+    "id": 38,
+    "fabricante": "Hummer",
+    "modelo": "H1",
+    "ano": 1996,
+    "cor": "Violet",
+    "valor": "476128.92"
+  },
+  {
+    "id": 39,
+    "fabricante": "Isuzu",
+    "modelo": "Hombre",
+    "ano": 2000,
+    "cor": "Indigo",
+    "valor": "478556.20"
+  },
+  {
+    "id": 40,
+    "fabricante": "Chevrolet",
+    "modelo": "Colorado",
+    "ano": 2012,
+    "cor": "Turquoise",
+    "valor": "205214.78"
+  },
+  {
+    "id": 41,
+    "fabricante": "Jeep",
+    "modelo": "Wrangler",
+    "ano": 2000,
+    "cor": "Purple",
+    "valor": "122048.81"
+  },
+  {
+    "id": 42,
+    "fabricante": "Toyota",
+    "modelo": "Avalon",
+    "ano": 2004,
+    "cor": "Orange",
+    "valor": "18346.39"
+  },
+  {
+    "id": 43,
+    "fabricante": "Honda",
+    "modelo": "Element",
+    "ano": 2005,
+    "cor": "Violet",
+    "valor": "487528.80"
+  },
+  {
+    "id": 44,
+    "fabricante": "Toyota",
+    "modelo": "Prius Plug-in",
+    "ano": 2012,
+    "cor": "Green",
+    "valor": "107591.60"
+  },
+  {
+    "id": 45,
+    "fabricante": "Mercury",
+    "modelo": "Sable",
+    "ano": 1986,
+    "cor": "Maroon",
+    "valor": "388634.82"
+  },
+  {
+    "id": 46,
+    "fabricante": "Toyota",
+    "modelo": "Prius",
+    "ano": 2003,
+    "cor": "Khaki",
+    "valor": "215297.31"
+  },
+  {
+    "id": 47,
+    "fabricante": "Lexus",
+    "modelo": "LS",
+    "ano": 2006,
+    "cor": "Teal",
+    "valor": "399422.11"
+  },
+  {
+    "id": 48,
+    "fabricante": "Porsche",
+    "modelo": "944",
+    "ano": 1986,
+    "cor": "Mauv",
+    "valor": "211983.89"
+  },
+  {
+    "id": 49,
+    "fabricante": "Infiniti",
+    "modelo": "I",
+    "ano": 1997,
+    "cor": "Violet",
+    "valor": "166320.40"
+  },
+  {
+    "id": 50,
+    "fabricante": "Land Rover",
+    "modelo": "LR4",
+    "ano": 2010,
+    "cor": "Pink",
+    "valor": "279013.31"
+  }
+]
