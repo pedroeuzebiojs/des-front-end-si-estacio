@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XPTO - Carteirinha do Estudante</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <div id="app" v-cloak>
+      <div id="wrapper">
+        <h1>XPTO - Carteirinha do Estudante</h1>
+
+        <div id="central" v-cloak>
+          <div id="formulario">
+            <label for="nome">Nome:</label>
+            <input
+              v-model="nome"
+              type="text"
+              id="nome"
+              placeholder="Digite seu nome"
+            />
+
+            <label for="matricula">Matrícula:</label>
+            <input
+              v-model="matricula"
+              type="text"
+              id="matrícula"
+              placeholder="Digite sua matrícula"
+            />
+          </div>
+
+          <div id="previa">
+            <div id="cartao">
+              <div id="dados-cartao">
+                <span class="label-cartao">Nome:</span>
+                <span class="dado-cartao">{{ nome }}</span>
+
+                <span class="label-cartao">Matrícula:</span>
+                <span class="dado-cartao" v-text="matricula"
+                  >{{ matricula }}</span
+                >
+              </div>
+              <div id="foto">Foto</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Importamos o Vue, da CDN unpkg.com -->
+    <script src="https://unpkg.com/vue@3.0.0-rc.5/dist/vue.global.js"></script>
+
+    <!-- Abrimos um bloco de script local para trabalharmos com o Vue.js -->
+    <script>
+      // Criamos uma Vue Instance (um App)
+      Vue.createApp({
+        // Dizemos quais dados esse App irá gerenciar
+        // data é uma função, (){ .... }
+        data() {
+          // que retorna Objeto (JSON)
+          return {
+            // nome e matricula inicialmente são Strings (textos) em branco ""
+            nome: "",
+            matricula: "",
+          };
+        },
+        // Dizemos onde em nosso HTML o Vue irá viver, neste caso no bloco HTML com id central
+      }).mount("#app");
+    </script>
+  </body>
+</html>
