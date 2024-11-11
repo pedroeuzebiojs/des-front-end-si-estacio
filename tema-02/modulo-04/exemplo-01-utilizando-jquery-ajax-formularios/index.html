@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <title>Utilizando jQuery, AJAX e Formulários</title>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.5.1.js"
+    ></script>
+    <style type="text/css">
+      #filtro {
+        width: 300px;
+        float: left;
+      }
+
+      #resultado {
+        width: 600px;
+        float: left;
+      }
+
+      table {
+        border-collapse: collapse;
+      }
+
+      th,
+      td {
+        padding: 15px;
+        text-align: left;
+      }
+
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+
+      #ano_de,
+      #ano_ate {
+        width: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="filtro">
+      <h1>Filtros:</h1>
+      <form id="form_filtros" action="javascript:void(0)">
+        <h2>Fabricante:</h2>
+        <input type="radio" id="fabricante" name="fabricante" value="Toyota" />
+        <label for="fabricante1"> Toyota</label><br />
+        <input type="radio" id="fabricante" name="fabricante" value="Ford" />
+        <label for="fabricante2"> Ford</label><br />
+        <input type="radio" id="fabricante" name="fabricante" value="BMW" />
+        <label for="fabricante3"> BMW</label><br />
+        <input type="radio" id="fabricante" name="fabricante" value="Dodge" />
+        <label for="fabricante4"> Dodge</label><br />
+        <input type="radio" id="fabricante" name="fabricante" value="Outros" />
+        <label for="fabricante5"> Outros</label><br />
+
+        <h2>Modelo:</h2>
+        <input
+          type="text"
+          name="modelo"
+          id="modelo"
+          placeholder="Digite o modelo"
+        />
+
+        <h2>Ano:</h2>
+        <input type="text" name="ano_de" id="ano_de" maxlength="4" /> a
+        <input type="text" name="ano_ate" id="ano_ate" maxlength="4" />
+        <a href="javascript:void(0)" onclick="filtrarPorAno()"> Filtrar Ano</a>
+
+        <br />
+        <br />
+        <a href="javascript:void(0)" onclick="carregaDadosJson()"> Limpar</a>
+      </form>
+    </div>
+
+    <!-- Esse div mostrará o resultado da requisição AJAX -->
+    <div id="resultado"></div>
+
+    <script type="text/javascript" src="scripts.js"></script>
+  </body>
+</html>
